@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel = "stylesheet" type="text/css" href="mytoonie_landingcss.css">
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="#home">홈으로</a>
+            <a href="#mylist">마이 리스트</a>
+            <a href="#webtoon">웹툰</a>
+            <a href="#webnovel">웹소설</a>
+            <a href="#official">정식 플랫폼</a>
+            <a href="#login">로그인/회원가입</a>
+            <a href="#help" class="split">도움말</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="main">
+            <h1 class="h1-1">오늘은 뭐 읽었어?</h1>
+            <img class="logo-img" src="Logo1.png" alt="logo">
+            <input class="search-input" type="text" placeholder="웹툰을 검색해보세요!">
+            <div class="btn-wrapper">
+                <button class="btn-1">
+                    오늘의 웹툰은?
+                </button>
+            </div>
+                <h1 class="h1-explain">마이투니란?</h1>
+                <p class="text">마이투니는 한국 웹툰을 사랑하는 이들을 위해 만들어진 웹툰 전용 기록 겸 리뷰 사이트입니다. 네이버 웹툰, 레진코믹스, 봄툰, 카카오페이지, 탑툰, 미스터블루 등 다양한
+                    국내 웹툰 플랫폼에 업로드된 작품들을 다루고 있으며, 정식 사이트 이용을 권장하기 위해 만들어졌습니다. 리스트에 읽은 웹툰, 
+                    혹은 읽고 싶은 웹툰을 추가하고 나만의 특별한 리스트를 만들어보세요!
+                </p>
+        </div>
+        <script>
+            function myFunction() {
+              var x = document.getElementById("myTopnav");
+              if (x.className === "topnav") {
+                x.className += " responsive";
+              } else {
+                x.className = "topnav";
+              }
+            }
+            </script>
+    </body>
+</html>
