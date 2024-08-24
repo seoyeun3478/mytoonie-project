@@ -5,50 +5,78 @@
 .topnav {
     background-color: #e2edee;
     opacity: 0.88;
-    overflow: hidden;
-    border-radius: 8px;
-    margin-left: 15px;
+    margin-left: 20px;
     margin-right: 20px;
     position: fixed;
+    padding: 0;
     top: 0;
     width: 97%;
 }
 
-.topnav a {
-    float: left;
-    color: rgb(75, 71, 71);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-.topnav a:hover {
-    background-color: #8db6f0;
-    color: white;
-}
 
 .topnav a.active {
     background-color: #8db6f0;
     color: white;
 }
 
-.topnav a.split {
-    float: right;
-    background-color: #8db6f0;
-    color: white;
+
+
+ul {
+    list-style: none;
+    background-color: #e2edee;
+    text-align: left;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
 }
 
-.topnav .icon {
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 18px 22px;
+    font-size: 16px;
+    color: rgb(75,71,71);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li ul.dropdown li {
+    display: block;
+    background: #e2edee;
+}
+
+ul li ul.dropdown li a {
+    font-size: 12px;
+    padding: 10px 8px;
+}
+
+
+ul li ul.dropdown {
+    width: 100%;
+    background: #e2edee;
+    position: absolute;
+    z-index: 999;
     display: none;
 }
 
+ul li a:hover {
+    background: #8db6f0;
+    color: white;
+}
 
+ul li:hover ul.dropdown {
+    display: block;
+}
 
 @media screen and (max-width: 800px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
+    .topnav ul li:not(:first-child) {display: none;}
+    .topnav ul li.icon {
       float: right;
       display: block;
     }
@@ -62,7 +90,6 @@
       top: 0;
     }
   }
-    
 
 body {
     background:

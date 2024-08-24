@@ -6,16 +6,29 @@
     </head>
     <body>
         <div class="topnav">
-            <a class="active" href="#home">홈으로</a>
-            <a href="#mylist">마이 리스트</a>
-            <a href="#webtoon">웹툰</a>
-            <a href="#webnovel">웹소설</a>
-            <a href="#official">정식 플랫폼</a>
-            <a href="#login">로그인/회원가입</a>
-            <a href="#help" class="split">도움말</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-            </a>
+            <ul>
+                <li><a class="active" href="#home">홈으로</a></li>
+                <li><a href="#mylist">마이 리스트</a></li>
+                <li><a href="#webtoon">웹툰</a>
+                    <ul class="dropdown">
+                        <li><a href="#">웹툰 검색</a></li>
+                        <li><a href="#">신작 웹툰</a></li>
+                        <li><a href="#">웹툰 랭킹</a></li>
+                        <li><a href="#">유저 추천</a></li>
+                    </ul>
+                </li>
+                <li><a href="#webnovel">웹소설</a>
+                    <ul class="dropdown">
+                        <li><a href="#">웹소설 검색</a></li>
+                        <li><a href="#">신작 웹소설</a></li>
+                        <li><a href="#">웹소설 랭킹</a></li>
+                        <li><a href="#">유저 추천</a></li>
+                    </ul>
+                </li>
+                <li><a href="#official">정식 플랫폼</a></li>
+                <li><a href="#login">로그인/회원가입</a></li>
+                <li><a href="#help">도움말</a></li>
+            </ul>
         </div>
         <div class="main">
             <h1 class="h1-1">오늘은 뭐 읽었어?</h1>
